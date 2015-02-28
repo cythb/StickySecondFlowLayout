@@ -36,7 +36,7 @@
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"Cell" forIndexPath:indexPath];
     UILabel *label = (id)[cell viewWithTag:1];
-    label.text = [NSString stringWithFormat:@"cell-%d", indexPath.item];
+    label.text = [NSString stringWithFormat:@"cell-%ld", indexPath.item];
     return cell;
 }
 
